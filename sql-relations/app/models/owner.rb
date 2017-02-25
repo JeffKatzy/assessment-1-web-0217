@@ -10,6 +10,7 @@ class Owner
   attr_reader :id
 
   def restaurants
+#     this is off.
     sql = <<-SQL
       SELECT * FROM restaurants
       WHERE customer_id = ?
